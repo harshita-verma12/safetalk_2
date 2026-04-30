@@ -1,0 +1,24 @@
+
+.blog-grid, .concerns-grid {
+  grid-template-columns: 1fr; /* This makes them HUGE and full-width */
+  gap: 30px;
+}
+
+.blog-card, .concern-card {
+  padding: 40px; /* Much bigger breathing room */
+  border-radius: 32px;
+  background: white;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover, .concern-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(108, 99, 255, 0.1);
+}
+
+.blog-card h3, .concern-card h3 {
+  font-size: 2rem; /* Big pop-up headings */
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+}

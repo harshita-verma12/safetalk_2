@@ -1,0 +1,73 @@
+.dashboard-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.panel {
+  padding: 20px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.prompt {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.quote-banner {
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--soft-blue), var(--soft-purple));
+  line-height: 1.7;
+}
+
+.todo-form,
+.chat-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.todo-list {
+  margin-top: 14px;
+  padding-left: 18px;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.chart-box {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+  height: 220px;
+  margin-top: 16px;
+  padding: 16px;
+  background: #faf9ff;
+  border-radius: 18px;
+}
+
+.chart-bar {
+  width: 14%;
+  border-radius: 14px 14px 0 0;
+  background: var(--accent);
+}
+
+.chart-bar-active {
+  background: var(--primary);
+}
+
+.chart-note {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .todo-form,
+  .chat-form {
+    flex-direction: column;
+  }
+}

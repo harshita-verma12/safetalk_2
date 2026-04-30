@@ -1,0 +1,19 @@
+.contact-card {
+  padding: 18px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.helpline-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.helpline-card {
+  padding: 18px;
+}
+
+.helpline-card span {
+  color: var(--muted);
+  display: block;
+  margin-top: 8px;
+}

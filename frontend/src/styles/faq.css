@@ -1,0 +1,13 @@
+.faq-grid {
+  grid-template-columns: 1fr;
+}
+
+.faq-card {
+  padding: 18px;
+}
+
+.faq-card p {
+  margin-top: 10px;
+  color: var(--muted);
+  line-height: 1.7;
+}

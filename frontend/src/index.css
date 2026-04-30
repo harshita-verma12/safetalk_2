@@ -1,0 +1,180 @@
+:root {
+  --bg: #f7f6ff;
+  --card: #ffffff;
+  --primary: #6c63ff;
+  --primary-dark: #5148d6;
+  --accent: #c7b8ff;
+  --soft-blue: #dcecff;
+  --soft-purple: #ede4ff;
+  --text: #2f2e41;
+  --muted: #66667a;
+  --border: #e7e4f6;
+  --shadow: 0 12px 30px rgba(108, 99, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #f8f7ff 0%, #f5f9ff 100%);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  padding: 24px;
+}
+
+.container {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 24px 0;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  cursor: pointer;
+  background: var(--primary);
+  color: white;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+.btn-secondary {
+  background: var(--soft-purple);
+  color: var(--text);
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: #fff;
+  outline: none;
+}
+
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    padding: 16px;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+  }
+}
+/* FORCE FOOTER FIX */
+.footer {
+  margin-top: 50px !important;
+  padding: 40px 0 !important;
+  background: linear-gradient(135deg, #f0edff 0%, #eef6ff 100%) !important;
+  border-top: 2px solid var(--primary) !important;
+  display: block !important;
+}
+
+.footer-inner {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 30px !important;
+  flex-wrap: wrap !important;
+}
+
+.footer-links {
+  display: flex !important;
+  gap: 25px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer-links a {
+  display: block !important;
+  color: #555 !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background-color: var(--bg); /* Keep your pastel base */
+  
+  /* Add colorful "tint" blobs */
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(108, 99, 255, 0.08) 0px, transparent 50%),
+    radial-gradient(at 90% 20%, rgba(219, 234, 254, 0.6) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(237, 228, 255, 0.8) 0px, transparent 50%),
+    radial-gradient(at 20% 90%, rgba(187, 247, 208, 0.4) 0px, transparent 50%);
+  
+  background-attachment: fixed; /* Keeps the tints stationary while scrolling */
+  color: var(--text);
+  min-height: 100vh;
+}

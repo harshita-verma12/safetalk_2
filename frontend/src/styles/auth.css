@@ -1,0 +1,21 @@
+.auth-page {
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+}
+
+.auth-card {
+  width: min(520px, 100%);
+  padding: 28px;
+}
+
+.auth-form {
+  display: grid;
+  gap: 14px;
+}
+
+@media (max-width: 768px) {
+  .auth-card {
+    padding: 20px;
+  }
+}

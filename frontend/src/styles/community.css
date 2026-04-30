@@ -1,0 +1,14 @@
+.community-grid {
+  margin-top: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.community-post {
+  padding: 18px;
+}
+
+.community-post p {
+  margin-top: 10px;
+  line-height: 1.7;
+  color: var(--muted);
+}
